@@ -1,8 +1,8 @@
 <?php
 
-namespace Exlo89\LaravelSevdeskApi\Tests;
+namespace Mapo89\LaravelHeizreportApi\Tests;
 
-use Exlo89\LaravelSevdeskApi\SevdeskApiServiceProvider;
+use Mapo89\LaravelHeizreportApi\HeizreportApiServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 class TestCase extends OrchestraTestCase
@@ -15,7 +15,7 @@ class TestCase extends OrchestraTestCase
     protected function getPackageProviders($app)
     {
         return [
-            SevdeskApiServiceProvider::class,
+            HeizreportApiServiceProvider::class,
         ];
     }
 }
