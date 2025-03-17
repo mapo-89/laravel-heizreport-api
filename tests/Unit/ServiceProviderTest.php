@@ -9,7 +9,7 @@ class ServiceProviderTest extends TestCase
     public function test_publish_config()
     {
         $this->artisan('vendor:publish', [
-            '--provider' => ' Mapo89\LaravelHeizreportApi\HeizreportApiServiceProvider',
+            '--provider' => 'Mapo89\LaravelHeizreportApi\HeizreportApiServiceProvider',
             '--tag'=>'config'
         ]);
 
