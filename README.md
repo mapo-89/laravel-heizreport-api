@@ -18,7 +18,7 @@ composer require mapo-89/laravel-heizreport-api
 Set your api token with
 
 ```
-SEVDESK_API_TOKEN=xxxxxxxx
+HEIZREPORT_API_TOKEN=xxxxxxxx
 ```
 
 Optionally you can publish the config file with:
