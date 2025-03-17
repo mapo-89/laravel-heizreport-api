@@ -1,13 +1,6 @@
 {
-    "name": "mapo-89/heizreportapi",
-    "description": "This package make a connection to the heizreport api and let you interact with it.",
-    "keywords": [
-        "mapo-89",
-        "heizreportapi"
-    ],
-    "homepage": "https://github.com/mapo-89/heizreportapi",
-    "license": "MIT",
-    "type": "library",
+    "name": "mapo-89/laravel-heizreport-api",
+    "description": "A Heizreport API client for Laravel.",
     "authors": [
         {
             "name": "Manuel Postler",
@@ -15,22 +8,33 @@
             "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/mapo-89/laravel-heizreport-api",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "heizreport",
+        "api",
+        "heizlast"
+    ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^8.0",
+        "guzzlehttp/guzzle": "^7.2"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
         "phpunit/phpunit": "^9.0"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Mapo89\\HeizreportApi\\": "src"
+            "Mapo89\\LaravelHeizreportApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mapo89\\HeizreportApi\\Tests\\": "tests"
+            "Mapo89\\LaravelHeizreportApi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mapo89\\HeizreportApi\\HeizreportApiServiceProvider"
+                "Mapo89\\LaravelHeizreportApi\\HeizreportApiServiceProvider"
             ],
             "aliases": {
-                "HeizreportApi": "Mapo89\\HeizreportApi\\HeizreportApiFacade"
+                "HeizreportApi": "Mapo89\\LaravelHeizreportApi\\Facades\\HeizreportApi"
             }
         }
     }

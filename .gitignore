@@ -1,0 +1,7 @@
+.idea/
+build
+composer.lock
+vendor
+coverage
+phpunit.xml
+.env
