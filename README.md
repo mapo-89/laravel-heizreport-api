@@ -1,8 +1,8 @@
 # laravel heizreport api
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mapo-89/heizreportapi.svg?style=flat-square)](https://packagist.org/packages/mapo-89/heizreportapi)
-[![Total Downloads](https://img.shields.io/packagist/dt/mapo-89/heizreportapi.svg?style=flat-square)](https://packagist.org/packages/mapo-89/heizreportapi)
-![GitHub Actions](https://github.com/mapo-89/heizreportapi/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mapo-89/laravel-heizreport-api.svg?style=flat-square)](https://packagist.org/packages/mapo-89/laravel-heizreport-api)
+[![Total Downloads](https://img.shields.io/packagist/dt/mapo-89/laravel-heizreport-api.svg?style=flat-square)](https://packagist.org/packages/mapo-89/laravel-heizreport-api)
+![GitHub Actions](https://github.com/mapo-89/laravel-heizreport-api/actions/workflows/main.yml/badge.svg)
 
 This package make a connection to the heizreport api and let you interact with it.
 
