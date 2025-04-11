@@ -4,6 +4,9 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/mapo-89/laravel-heizreport-api.svg?style=flat-square)](https://packagist.org/packages/mapo-89/laravel-heizreport-api)
 ![GitHub Actions](https://github.com/mapo-89/laravel-heizreport-api/actions/workflows/main.yml/badge.svg)
 
+📖 This README is also available in [🇩🇪 German](README.de.md).
+
+
 A simple Laravel integration for the [Heizreport API](https://heizreport.com/hilfethemen/schnittstellen). This package provides a clean interface to interact with the API.
 
 ---
