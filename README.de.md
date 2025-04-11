@@ -6,6 +6,8 @@
 
 Eine einfache Laravel-Integration für die [Heizreport API](https://heizreport.com/hilfethemen/schnittstellen). Dieses Paket stellt dir eine saubere Schnittstelle zur Verfügung, um mit der API zu interagieren.
 
+📖 Diese README ist auch auf [🇬🇧 Englisch](README.md) verfügbar.
+
 ---
 
 ## 📦 Installation
