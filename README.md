@@ -1,65 +1,87 @@
-# laravel heizreport api
+# 🚀 Laravel Heizreport API
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mapo-89/laravel-heizreport-api.svg?style=flat-square)](https://packagist.org/packages/mapo-89/laravel-heizreport-api)
 [![Total Downloads](https://img.shields.io/packagist/dt/mapo-89/laravel-heizreport-api.svg?style=flat-square)](https://packagist.org/packages/mapo-89/laravel-heizreport-api)
 ![GitHub Actions](https://github.com/mapo-89/laravel-heizreport-api/actions/workflows/main.yml/badge.svg)
 
-This package make a connection to the heizreport api and let you interact with it.
+A simple Laravel integration for the [Heizreport API](https://heizreport.com/hilfethemen/schnittstellen). This package provides a clean interface to interact with the API.
 
-[Heizreport API Documentation](https://heizreport.com/hilfethemen/schnittstellen)
+---
 
-## Installation
+## 📦 Installation
 
-You can install the package via composer:
+Install the package via Composer:
 
 ```bash
 composer require mapo-89/laravel-heizreport-api
 ```
-Set your api token with
 
-```
-HEIZREPORT_API_TOKEN=xxxxxxxx
+Add your API token to your `.env` file:
+
+```env
+HEIZREPORT_API_TOKEN=your-token-here
 ```
 
-Optionally you can publish the config file with:
+Optionally, you can publish the config file:
 
 ```bash
 php artisan vendor:publish --provider="Mapo89\LaravelHeizreportApi\HeizreportApiServiceProvider" --tag="config"
 ```
 
-## Usage
+---
+
+## ⚙️ Usage
 
 ```php
-// Usage description here
+use Mapo89\LaravelHeizreportApi\Facades\HeizreportApi;
+
+// Example: Fetch heating data
+$data = HeizreportApi::getSomething(); // customize this based on your needs
 ```
 
-### Testing
+> 📚 Full API documentation available at: [heizreport.com](https://heizreport.com/hilfethemen/schnittstellen)
+
+---
+
+## ✅ Testing
 
 ```bash
 composer test
 ```
 
-### Changelog
+---
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+## 📒 Changelog
 
-## Contributing
+Please see [CHANGELOG](CHANGELOG.md) for recent changes.
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+---
 
-### Security
+## 🤝 Contributing
 
-If you discover any security related issues, please email info@postler.de instead of using the issue tracker.
+Contributions are welcome! Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## Credits
+---
 
--   [Manuel Postler](https://github.com/mapo-89)
--   [All Contributors](../../contributors)
+## 🔐 Security
 
-## License
+If you discover any security issues, please do **not** use the issue tracker. Instead, email us directly at [info@postler.de](mailto:info@postler.de).
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+---
 
-## Laravel Package Boilerplate
+## 👥 Credits
 
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
+- [Manuel Postler](https://github.com/mapo-89)  
+- [All Contributors](../../contributors)
+
+---
+
+## 📄 License
+
+The MIT License (MIT). Please see the [License File](LICENSE.md) for more information.
+
+---
+
+## 🛠️ Laravel Package Boilerplate
+
+Generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
