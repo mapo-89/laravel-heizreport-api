@@ -18,12 +18,12 @@
         "heizlast"
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "guzzlehttp/guzzle": "^7.2"
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.0"
+        "orchestra/testbench": "^11.0",
+        "phpunit/phpunit": "^11.5.3"
     },
     "minimum-stability": "dev",
     "autoload": {
