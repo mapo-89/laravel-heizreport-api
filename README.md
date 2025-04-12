@@ -24,6 +24,18 @@ Add your API token to your `.env` file:
 HEIZREPORT_API_TOKEN=your-token-here
 ```
 
+Alternatively, you can load the token dynamically (e.g., from a database). In your `AppServiceProvider` inside the `boot()` method:
+
+```php
+use Illuminate\Support\Facades\Config;
+use App\Models\Integration;
+
+public function boot()
+{
+    Config::set('heizreport-api.api_token', Integration::getApiToken('Heizreport'));
+}
+```
+
 Optionally, you can publish the config file:
 
 ```bash
@@ -37,8 +49,8 @@ php artisan vendor:publish --provider="Mapo89\LaravelHeizreportApi\HeizreportApi
 ```php
 use Mapo89\LaravelHeizreportApi\Facades\HeizreportApi;
 
-// Example: Fetch heating data
-$data = HeizreportApi::getSomething(); // customize this based on your needs
+// Example: Fetch all projects
+$data = HeizreportApi::make()->projects()->all(); // customize this based on your needs
 ```
 
 > 📚 Full API documentation available at: [heizreport.com](https://heizreport.com/hilfethemen/schnittstellen)
