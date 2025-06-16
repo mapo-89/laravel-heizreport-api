@@ -5,4 +5,4 @@ vendor
 coverage
 phpunit.xml
 .env
-.env.testing
+.phpunit.result.cache
