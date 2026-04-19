@@ -23,9 +23,9 @@
     },
     "require-dev": {
         "orchestra/testbench": "^11.0",
-        "phpunit/phpunit": "^11.5.3"
+        "phpunit/phpunit": "^13.1"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Mapo89\\LaravelHeizreportApi\\": "src"
